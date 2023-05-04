@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <style>
+      #card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  width: 90vw;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+  <div>
+    
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <a href="home.html" class="btn btn-ghost normal-case text-xl">NEXUS</a>
+      </div>
+  
+  
+      <ul class="menu menu-horizontal px-1">
+          
+          <li tabindex="0" style="margin-right: 20px; ">
+            <a href="huddle.html">
+              Host a meeting
+              
+            </a>
+            
+          </li>
+         
+        </ul>
+  
+  
+      <div class="flex-none gap-2">
+        
+  
+  
+  
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="profile.png" />
+            </div>
+          </label>
+          <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+            <li>
+              <a href="home.html" class="justify-between">
+              Home
+                <span class="badge">New</span>
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <div id="publish-container" class=" space-y-4 bg-neutral">
+    <!-- Publish form -->
+
+
+
+	<div class="hero min-h-screen ">
+        <div class=" ">
+          
+          <div class="card  mx-auto shadow-2xl bg-base-100"  style="width:760px ;" >
+            <div class="card-body">
+             
+             
+             
+
+
+
+			  <form id="publish-form">
+
+
+				<div class="form-control">
+					<label for="title" class="label">
+					  <span class="label-text">Tittle</span>
+					</label>
+					<input id="title" type="text" placeholder="tittle" class="input input-bordered" required/>
+				  </div>
+
+
+				  <div class="form-control">
+					<label for="author-name" class="label">
+					  <span class="label-text">Article By</span>
+					</label>
+					<input id="author-name" type="text" placeholder="author name" class="input input-bordered" required/>
+				  </div>
+
+
+				  <div class="form-control">
+					<label for='ipfs-hash'" class="label">
+					  <span class="label-text">Article</span>
+					</label>
+					
+					<textarea id='ipfs-hash' placeholder="Write or Paste your article here" class="textarea textarea-bordered textarea-lg w-full " required></textarea>
+				  </div>
+
+				  <div class="form-control mt-6">
+					<button type='submit' class="btn loadingy">PUBLISH TO BLOCKCHAIN</button>
+				  </div>
+
+
+
+				
+
+				
+				
+		
+				
+		  
+		  
+			  </form>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+	
+
+  </div>
+
+  <!-- Include your publish.js script -->
+  <script src='publish.js'></script>
+
+</body>
+</html>
